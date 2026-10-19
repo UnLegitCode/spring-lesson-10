@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:7771/api/users
+
+### list users
+GET {{baseUrl}}
+Accept: application/json
+
+### create
+POST {{baseUrl}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Dmitriy",
+  "email": "dima@yandex.ru"
+}
+
+### exists
+GET {{baseUrl}}/exists/3
